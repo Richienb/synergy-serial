@@ -1,6 +1,6 @@
 {
     "name": "synergy-serial",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Generate a Synergy serial code.",
     "repository": "https://github.com/Richienb/synergy-serial.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
