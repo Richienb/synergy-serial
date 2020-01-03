@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "synergy-serial",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Generate a Synergy serial code.",
+    "repository": "https://github.com/Richienb/synergy-serial.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,26 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=6"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "synergy",
+        "serial",
+        "code",
+        "generate",
+        "open-source"
+    ],
+    "dependencies": {
+        "buffer-from": "^1.1.1",
+        "chance": "^1.1.4",
+        "hasha": "^5.1.0",
+        "map-string": "^1.0.0",
+        "ow": "^0.15.0"
+    },
     "devDependencies": {
         "ava": "^2.4.0",
         "eslint-config-richienb": "^0.2.3",
