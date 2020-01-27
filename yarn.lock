@@ -3335,9 +3335,9 @@ os-tmpdir@^1.0.1, os-tmpdir@~1.0.2:
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
 ow@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/ow/-/ow-0.15.0.tgz#0d928046989422d7b06f0d6f20017016a0373df5"
-  integrity sha512-iHHqr8OXsZzBjUkOVxfSR8opBhEhdQUGE4mxZEWehQawHxhCcnnGXrfu6+HhLG3XTK+oHRD/dlfGwNdY9HTHxQ==
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/ow/-/ow-0.15.1.tgz#ad21bb4d4c46d4478b948522e36b214f6f13039d"
+  integrity sha512-rwiuvCnk3Ug9T4s5oKzw3QXQSiTXlTUiQgHmZ9Ozw/37YzeX8LycosVKOtO3v5+fuARGmCgz9rVhaBJeGV+2bQ==
   dependencies:
     type-fest "^0.8.1"
 
