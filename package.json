@@ -27,7 +27,7 @@
     "dependencies": {
         "buffer-from": "^1.1.1",
         "chance": "^1.1.4",
-        "ow": "^0.15.0"
+        "ow": "^0.16.0"
     },
     "devDependencies": {
         "ava": "^2.4.0",
