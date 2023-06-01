@@ -23,5 +23,3 @@ module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email()
         return toHex(`{v2;maintenance;${edition};${name};${userLimit};${email};${business};0;0}`)
     }
 }
-
-
