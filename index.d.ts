@@ -20,14 +20,13 @@ declare interface Options {
     business?: string
 
     /**
-     * The edition of the desired key
-     */
-
+     * The edition of the software.
+    */
     edition?: string
 
     /**
-     * The version of the synergy target: 1 for synergy 1, 2 for synergy 2/3
-     */
+     * The version of the key. Version 1 works on Synergy v1 and version 2 works on Synergy v2 and v3.
+    */
     version?: number
 }
 
