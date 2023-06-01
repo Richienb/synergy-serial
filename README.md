@@ -71,7 +71,7 @@ The edition of the software.
 ##### version
 
 Type: `number`\
-Default: `1`
+Default: `2`
 
-The version of the key. Version 1 works on Synergy v1 and version 2 works on Synergy v2 and v3.
+The version of the key. Version 1 works on Synergy v1 and version 2 works on Synergy v1 (recent versions), v2 and v3.
 
