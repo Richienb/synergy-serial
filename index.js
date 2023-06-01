@@ -5,6 +5,8 @@ const bufferFrom = require("buffer-from")
 const Chance = require("chance")
 const chance = new Chance()
 
+const toHex = key => bufferFrom(key).toString("hex").toUpperCase()
+
 module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email(), business = name, edition = "pro", version = 1 } = {}) => {
     ow(name, ow.string)
     ow(userLimit, ow.number)
@@ -14,13 +16,11 @@ module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email()
     ow(edition, ow.string)
 
     if (version === 1) {
-        const key = `{v1;${edition};${name};${userLimit};${email};${business};0;0}`
-        return bufferFrom(key).toString("hex").toUpperCase()
+        return toHex(`{v1;${edition};${name};${userLimit};${email};${business};0;0}`)
     }
 
     if (version === 2) {
-        const key = `{v2;maintenance;${edition};${name};${userLimit};${email};${business};0;0}`
-        return bufferFrom(key).toString("hex").toUpperCase()
+        return toHex(`{v2;maintenance;${edition};${name};${userLimit};${email};${business};0;0}`)
     }
 }
 
