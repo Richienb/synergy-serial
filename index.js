@@ -7,7 +7,7 @@ const chance = new Chance()
 
 const toHex = key => bufferFrom(key).toString("hex").toUpperCase()
 
-module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email(), business = name, edition = "pro", version = 2 } = {}) => {
+module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email(), business = name, edition = "pro", version = 1 } = {}) => {
     ow(name, ow.string)
     ow(userLimit, ow.number)
     ow(email, ow.string)
