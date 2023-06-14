@@ -18,6 +18,16 @@ declare interface Options {
      * The business of the user.
     */
     business?: string
+
+    /**
+     * The edition of the software.
+    */
+    edition?: string
+
+    /**
+     * The version of the key. Version 1 works on Synergy v1 and version 2 works on Synergy v1 (recent versions), v2 and v3.
+    */
+    version?: number
 }
 
 /**
@@ -32,6 +42,9 @@ declare interface Options {
  *
  * synergySerial({name: "Humairaa Novak", userLimit: 99, email: "angZh@example.com"})
  * //=> '7B76313B70726F3B48756D6169726161204E6F76616B3B39393B616E675A68406578616D706C652E636F6D3B48756D6169726161204E6F76616B3B303B307D'
+ *
+ * synergySerial({name: "Humairaa Novak", userLimit: 99, email: "angZh@example.com", version: 2, edition: "pro"})
+ * //=> '7B76323B6D61696E74656E616E63653B70726F3B48756D6169726161204E6F76616B3B39393B616E675A68406578616D706C652E636F6D3B48756D6169726161204E6F76616B3B303B307D'
  * ```
 */
 declare function synergySerial(options?: Options): string;
