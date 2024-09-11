@@ -23,5 +23,9 @@ module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email()
         return toHex(`{v2;maintenance;${edition};${name};${userLimit};${email};${business};0;0}`)
     }
 
-    throw new Error(`Expected version to be \`1\` or \`2\`, got ${version}`)
+    if (version === 3) {
+        return toHex(`{v2;maintenance;${edition};${name};${userLimit};${email};${business};3705750621;4705750621}`)
+    }
+
+    throw new Error(`Expected version to be \`1\`, \`2\` or \`3\`, got ${version}`)
 }
