@@ -30,7 +30,7 @@ declare interface Options {
     version?: number
 
     /**
-     * When `version: 3`, the unix timestamp (in seconds) of when the key expiring warning should appear.
+     * When `version: 3`, the unix timestamp (in seconds) of when the key expiration warning should appear.
      */
     warningTime?: number
 

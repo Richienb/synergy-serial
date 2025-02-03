@@ -80,7 +80,7 @@ The version of the key. Version 1 works on Synergy v1 and version 2 works on Syn
 Type: `number`\
 Default: `3705750621`
 
-When `version: 3`, the unix timestamp (in seconds) of when the key expiring warning should appear.
+When `version: 3`, the unix timestamp (in seconds) of when the key expiration warning should appear.
 
 ##### expirationTime
 
