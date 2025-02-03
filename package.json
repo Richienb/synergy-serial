@@ -15,7 +15,7 @@
     },
     "scripts": {
         "lint": "xo",
-        "test": "yarn lint && ava"
+        "test": "xo && ava"
     },
     "keywords": [
         "synergy",

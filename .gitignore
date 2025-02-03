@@ -1,3 +1,7 @@
+.idea
+package-lock.json
+yarn.lock
+
 # Visual Studio Code
 
 .vscode/*
