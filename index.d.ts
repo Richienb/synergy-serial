@@ -25,9 +25,19 @@ declare interface Options {
     edition?: string
 
     /**
-     * The version of the key. Version 1 works on Synergy v1 and version 2 works on Synergy v1 (recent versions), v2 and v3.
+     * The version of the key. Version 1 works on Synergy v1 and version 2 works on Synergy v1 (recent versions), v2 and v3 until v3.0.75 RC3. Version 3 works on at least 3.0.75 RC3 and later.
     */
     version?: number
+
+    /**
+     * When `version: 3`, the unix timestamp (in seconds) of when the key expiring warning should appear.
+     */
+    warningTime?: number
+
+    /**
+     * When `version: 3`, the unix timestamp (in seconds) of when the key should expire.
+     */
+    expirationTime?: number
 }
 
 /**

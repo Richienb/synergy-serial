@@ -7,7 +7,7 @@ const chance = new Chance()
 
 const toHex = (key) => bufferFrom(key).toString("hex").toUpperCase()
 
-module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email(), business = name, edition = "pro", version = 1 } = {}) => {
+module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email(), business = name, edition = "pro", version = 1, warningTime = 3705750621, expirationTime = 4705750621 } = {}) => {
     ow(name, ow.string)
     ow(userLimit, ow.number)
     ow(email, ow.string)
@@ -21,6 +21,10 @@ module.exports = ({ name = chance.name(), userLimit = 99, email = chance.email()
 
     if (version === 2) {
         return toHex(`{v2;maintenance;${edition};${name};${userLimit};${email};${business};0;0}`)
+    }
+
+    if (version === 3) {
+        return toHex(`{v2;maintenance;${edition};${name};${userLimit};${email};${business};${warningTime};${expirationTime}}`)
     }
 
     throw new Error(`Expected version to be \`1\` or \`2\`, got ${version}`)
